@@ -1,6 +1,5 @@
 package com.grocery.booking.controller;
 
-import com.grocery.booking.domian.Grocery;
 import com.grocery.booking.dto.GroceryDTO;
 import com.grocery.booking.service.GroceryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +44,18 @@ public class QueryController {
     @PutMapping("/admin/groceries/{id}")
     public GroceryDTO updateGroceryItem(@PathVariable Long id, @RequestBody GroceryDTO item) {
         return groceryService.updateGroceryItem(id, item);
+    }
+
+    /**
+     * Updates the inventory level of a specific grocery item by its ID.
+     *
+     * @param id       The ID of the grocery item to update.
+     * @param quantity The new inventory quantity for the grocery item.
+     * @return The updated grocery item details with the new inventory level.
+     */
+    @PutMapping("/admin/groceries/{id}/inventory")
+    public GroceryDTO updateInventoryLevel(@PathVariable Long id, @RequestParam int quantity) {
+        return groceryService.updateInventoryLevel(id, quantity);
     }
 
 }

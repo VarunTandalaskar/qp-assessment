@@ -1,6 +1,5 @@
 package com.grocery.booking.service;
 
-import com.grocery.booking.constants.AppConstants;
 import com.grocery.booking.domian.User;
 import com.grocery.booking.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

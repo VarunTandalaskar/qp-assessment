@@ -1,11 +1,8 @@
 package com.grocery.booking.controller;
 
-import com.grocery.booking.domian.Grocery;
-import com.grocery.booking.domian.Order;
 import com.grocery.booking.dto.GroceryDTO;
 import com.grocery.booking.dto.OrderDTO;
 import com.grocery.booking.service.CommandService;
-import com.grocery.booking.service.GroceryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

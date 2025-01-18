@@ -20,4 +20,5 @@ public class AppConstants {
     public static final String NULL_ORDER = "Order cannot be null";
     public static final String NO_INVENTORY = "No Groceries in inventory!";
     public static final String GROCERY_ITEM_NOT_FOUND = "Grocery item not found with id:";
+    public static final String NEGATIVE_QUANTITY = "Quantity cannot be negative.";
 }
