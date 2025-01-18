@@ -1,0 +1,8 @@
+package com.grocery.booking.repository;
+
+import com.grocery.booking.domian.OrderItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OrderItemRepository extends JpaRepository<OrderItem, Long> {
+
+}
